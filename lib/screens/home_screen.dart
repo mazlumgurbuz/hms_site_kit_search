@@ -12,7 +12,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HMS Site Kit '),
+        backgroundColor: Colors.grey,
+        title: const Text('HMS Site Kit Search '),
       ),
       body: Center(
         child: Column(

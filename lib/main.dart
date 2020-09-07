@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      color: Colors.white,
       home: HomeScreen(),
       routes: {
         HomeScreen.id: (context) => HomeScreen(),

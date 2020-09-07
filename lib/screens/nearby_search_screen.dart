@@ -5,7 +5,7 @@ import 'package:hms_site_kit_search/models/nearby_place_search_response.dart';
 import 'package:hms_site_kit_search/models/site.dart';
 import '../util.dart';
 import '../widgets/custom_button.dart';
-import '../widgets/custom_text_form_field.dart';
+import '../widgets/custom_text.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
@@ -84,39 +84,40 @@ class _NearbySearchScreenState extends State<NearbySearchScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black26,
         title: const Text('Nearby Search'),
       ),
       body: SingleChildScrollView(
         child: Column(children: [
-          CustomTextFormField(
+          CustomText(
             labelText: "Query Text",
             controller: queryTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Language",
             controller: languageTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Latitude",
             controller: latTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Longitude",
             controller: lngTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Radius",
             controller: radiusTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "PageIndex",
             controller: pageIndexTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "PageSize",
             controller: pageSizeTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "hwPoiType",
             controller: hwPoiTypeTextController,
           ),

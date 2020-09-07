@@ -6,7 +6,7 @@ import 'package:hms_site_kit_search/models/query_suggestion_response.dart';
 import 'package:hms_site_kit_search/models/site.dart';
 import '../util.dart';
 import '../widgets/custom_button.dart';
-import '../widgets/custom_text_form_field.dart';
+import '../widgets/custom_text.dart';
 import 'package:http/http.dart' as http;
 
 class QuerySuggestionSearchScreen extends StatefulWidget {
@@ -75,31 +75,32 @@ class _QuerySuggestionSearchScreenState extends State<QuerySuggestionSearchScree
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black26,
         title: const Text('Query Suggestion Search'),
       ),
       body: SingleChildScrollView(
         child: Column(children: [
-          CustomTextFormField(
+          CustomText(
             labelText: "Query Text",
             controller: queryTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Language",
             controller: languageTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Latitude",
             controller: latTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Longitude",
             controller: lngTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Radius",
             controller: radiusTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "PoliticalView",
             controller: politicalViewTextController,
           ),

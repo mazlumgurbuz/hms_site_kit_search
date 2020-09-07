@@ -4,7 +4,7 @@ import 'package:hms_site_kit_search/models/place_detail_search_response.dart';
 import 'package:hms_site_kit_search/models/site.dart';
 import '../util.dart';
 import '../widgets/custom_button.dart';
-import '../widgets/custom_text_form_field.dart';
+import '../widgets/custom_text.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
@@ -71,19 +71,20 @@ class _DetailSearchScreenState extends State<DetailSearchScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black26,
         title: const Text('Detail Search'),
       ),
       body: SingleChildScrollView(
         child: Column(children: [
-          CustomTextFormField(
+          CustomText(
             labelText: "SiteId Text",
             controller: siteIdTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Language",
             controller: languageTextController,
           ),
-          CustomTextFormField(
+          CustomText(
             labelText: "Political View",
             controller: politicalViewTextController,
           ),
