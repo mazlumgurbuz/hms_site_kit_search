@@ -20,4 +20,9 @@ class Poi{
         photoUrls: json['photoUrls'] as List<String>
     );
   }
+
+  @override
+  String toString() {
+    return 'Poi{poiTypes: $poiTypes, hwPoiTypes: $hwPoiTypes, phone: $phone, internationalPhone: $internationalPhone, rating: $rating, webSiteUrl: $webSiteUrl, photoUrls: $photoUrls}';
+  }
 }

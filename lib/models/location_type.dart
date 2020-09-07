@@ -192,4 +192,5 @@ class LocationType {
 
   @override
   int get hashCode => _value.hashCode;
+
 }

@@ -22,7 +22,7 @@ class Site {
         location: Coordinate.fromJSON(json['location']),
         name: json['name'],
         viewport: json["viewport"] == null ? null : CoordinateBounds.fromJSON(json["viewport"]),
-        distance: json['distance'],
+        distance: json['distance'] == null ? null :json['distance'],
         poi: Poi.fromJSON(json['poi']));
   }
 

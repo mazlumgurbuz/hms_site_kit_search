@@ -33,4 +33,9 @@ class AddressDetail {
         postalCode: json['postalCode']
     );
   }
+
+  @override
+  String toString() {
+    return 'AddressDetail{countryCode: $countryCode, country: $country, adminArea: $adminArea, subAdminArea: $subAdminArea, locality: $locality, subLocality: $subLocality, streetNumber: $streetNumber, thoroughfare: $thoroughfare, postalCode: $postalCode}';
+  }
 }

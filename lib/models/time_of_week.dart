@@ -10,4 +10,9 @@ class TimeOfWeek{
         json['time']
     );
   }
+
+  @override
+  String toString() {
+    return 'TimeOfWeek{week: $week, time: $time}';
+  }
 }

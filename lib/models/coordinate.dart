@@ -19,4 +19,8 @@ class Coordinate{
     'lng': lng,
   };
 
+  @override
+  String toString() {
+    return 'Coordinate{lat: $lat, lng: $lng}';
+  }
 }

@@ -17,4 +17,9 @@ class Address{
         settlement: json['settlement']
     );
   }
+
+  @override
+  String toString() {
+    return 'Address{countryCode: $countryCode, country: $country, state: $state, county: $county, town: $town, settlement: $settlement}';
+  }
 }

@@ -12,4 +12,9 @@ class Period{
         close: TimeOfWeek.fromJSON(json['close'])
     );
   }
+
+  @override
+  String toString() {
+    return 'Period{open: $open, close: $close}';
+  }
 }
